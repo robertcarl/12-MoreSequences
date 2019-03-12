@@ -292,7 +292,9 @@ def draw_shapes(shapes, window):
     # FWIW: The word for ideas like this is "polymorphism".
     ###########################################################################
     # -------------------------------------------------------------------------
-
+    for k in range(len(shapes)):
+        shapes[k].attach_to(window)
+    window.render(.3)
 
 def run_test_rectangles_from_circles():
     """ Tests the   rectangles_from_circles    function. """
